@@ -1,0 +1,41 @@
+#vflow-chat-container {
+    margin: 0 auto;
+}
+
+.floating-bug-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 9999;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .floating-bug-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+  }
+
+  .floating-bug-btn .icon {
+    font-size: 1.2em;
+  }
+
+footer {
+    justify-content: center;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}

@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClimaFlow - Chatbot</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌦️</text></svg>">
-</head>
-<body>
-    <script type="text/javascript">
-    (function(d, t) {
-        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        v.onload = function() {
-            window.voiceflow.chat.load({
-            verify: { projectID: '696ad1b722776736091c4501' },
-            url: 'https://general-runtime.voiceflow.com',
-            versionID: 'production'
-            }).then(() => {
-                setTimeout(() => {
-                window.voiceflow.chat.open();
-                }, 1000); // 1000 milissegundos = 1 segundo
-            });
-        }
-        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
-        v.type = "text/javascript"; 
-        s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌦️</text></svg>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/style.css">
+        <title>ClimaFlow - Chatbot</title>
+    </head>
+    <body>
+        <main>
+            <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                    window.voiceflow.chat.load({
+                    verify: { projectID: '696ad1b722776736091c4501' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    voice: {
+                        url: "https://runtime-api.voiceflow.com"
+                    },
+                    render: {
+                        mode: 'embedded',
+                        target: document.getElementById('vflow-chat-container')
+                    }
+                    });
+                }
+                v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+            </script>
+            <br><br><br><br>
+            <div id="vflow-chat-container" style="width: 50%; height: 600px;"></div>
+            <a href="https://github.com/raphaelsette/chatbot-climaflow-lowcode/issues/new" target="_blank"><button id="report-bug-btn" class="floating-bug-btn">
+                <span class="icon">🚨</span> Reportar Bug
+            </button></a>
+        </main>
+    </body>
+    <footer>
+        <div id="logos-redes">
+            <a href="https://github.com/raphaelsette/chatbot-climaflow-lowcode" target="_blank"><img src="./src/img/svg/github.svg" width="40px" alt="Icone Github"></a>
+            <a href="https://www.linkedin.com/in/raphaelsette/" target="_blank"><img src="./src/img/svg/linkedin.svg" width="40px" alt="Icone Linkedin"></a>
+        </div>
+    </footer>
 </html>
