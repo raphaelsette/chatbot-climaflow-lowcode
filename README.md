@@ -52,5 +52,5 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 
 ## 📸 Demonstração do Fluxo
 
-<img src="./src/img/screenshots/print_1.png" width="800px">
+<img src="./src/img/screenshots/print_2_3.png" width="800px">
 <img src="./src/img/screenshots/print_2_2.png" width="800px">
