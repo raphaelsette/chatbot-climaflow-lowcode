@@ -67,7 +67,7 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 
 
 **Fluxo de Design no Voiceflow**<br>
-<img src="./src/img/screenshots/print_2_4.png" width="800px">
+<img src="./src/img/screenshots/print_2_6.png" width="800px">
 
 
 **Métricas para Análise**<br>
