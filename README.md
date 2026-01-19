@@ -1,6 +1,6 @@
 ![Status](https://img.shields.io/badge/status-ativo-brightgreen) ![Linguagem](https://img.shields.io/badge/linguagem-JavaScript-yellow)
 
-# 🌦️ ClimaFlow: Assistente Meteorológico Inteligente
+# 🌦️ ClimaFlow: Assistente Meteorológico
 
 O ClimaFlow é um chatbot de conversação desenvolvido no [Voiceflow](https://www.voiceflow.com/) que fornece previsões do tempo em tempo real. Este projeto foi criado para demonstrar a integração de APIs externas, manipulação de dados via JavaScript e design de experiência do usuário (UX) em ferramentas low-code.
 
