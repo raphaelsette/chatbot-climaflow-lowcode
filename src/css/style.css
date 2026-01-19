@@ -1,87 +1,50 @@
-/* Estilo base do botão (Desktop) */
-.floating-bug-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ff4d4d;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    font-family: sans-serif;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 9999;
-    transition: transform 0.2s, background-color 0.2s;
-}
-
-/* Ajustes para Smartphones (Ecrãs até 600px) */
-@media (max-width: 600px) {
-    .floating-bug-btn {
-        bottom: 15px; /* Sobe um pouco para não ficar colado ao fundo */
-        right: 15px;
-        padding: 8px 15px; /* Reduz o tamanho interno */
-        font-size: 14px; /* Diminui a letra */
-        gap: 5px;
-    }
-
-    .floating-bug-btn .icon {
-        font-size: 1em; /* Ícone menor */
-    }
-
-    /* Opcional: Esconder o texto e deixar apenas o ícone em telas muito pequenas */
-    @media (max-width: 400px) {
-        .floating-bug-btn span:not(.icon) {
-            display: none; /* Esconde o texto "Reportar Bug" */
-        }
-        .floating-bug-btn {
-            padding: 10px;
-            border-radius: 50%; /* Torna o botão redondo */
-            width: 45px;
-            height: 45px;
-            justify-content: center;
-        }
-    }
-}
-
-  #vflow-chat-container {
+#vflow-chat-container {
     margin: 0 auto;
-    width: 95%;      /* Ocupa quase toda a largura em telas pequenas */
-    max-width: 800px; /* Limite de largura para telas grandes */
-    height: 80vh;    /* Altura baseada na visão do dispositivo (viewport height) */
-    min-height: 500px;
-}
-
-/* Ajustes para o botão flutuante em telas menores */
-@media (max-width: 600px) {
-    .floating-bug-btn {
-        padding: 8px 12px;
-        font-size: 0.8em;
-        bottom: 10px;
-        right: 10px;
-    }
-    
-    footer {
-        position: relative; /* Evita que o rodapé sobreponha o chat em telas curtas */
-        margin-top: 20px;
-    }
+    width: 95%;
+    max-width: 800px;
+    height: 600px;
+    margin-bottom: 20px;
 }
 
 footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 80px;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 0;
     width: 100%;
-    margin-top: 20px; /* Garante um espaço entre o chat e os ícones */
-    padding-bottom: 20px;
+    position: relative;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 #logos-redes {
     display: flex;
     gap: 15px; /* Espaçamento entre os ícones do GitHub e LinkedIn */
+}
+
+.footer-bug-btn {
+    background-color: #ff4d4d;
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.footer-bug-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+    text-decoration: none;
 }
