@@ -44,11 +44,11 @@ Além disso, o assistente possui uma camada de persistência de dados através d
 
 ## 📐 Estrutura do Projeto (Arquitetura)
 
-O bot segue uma estrutura lógica dividida em 4 fases principais:
+O bot segue uma estrutura lógica dividida em 5 fases principais:
 
 - **Input & Contexto:** Coleta do nome da cidade e definição da saudação.
 
-- **Integração:** Requisição GET para a API com tratamento de tokens de segurança.
+- **Integração:** Requisição para a API da OpenWeather com tratamento de tokens de segurança.
 
 - **Processamento:** Bloco de código JavaScript que limpa os dados brutos e define a "personalidade" da resposta baseada na temperatura e descrição.
 
