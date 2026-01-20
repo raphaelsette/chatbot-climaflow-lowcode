@@ -1,0 +1,3232 @@
+{
+  "version": {
+    "_version": 13.07,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 1921910,
+    "manualSave": false,
+    "model": {},
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Desculpe, não entendi. Por favor, escolha um botão antes de continuar."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "elevenlabs:eleven_turbo_v2_5:ZF6FPAbjXT4488VcRRnw",
+        "deepgramASR": {
+          "silenceWaitMS": 10,
+          "punctuationWaitMS": 200,
+          "partialWaitMS": 1000,
+          "interruptionWaitWords": 1,
+          "audioCue": null
+        }
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "flows": {},
+      "agents": {},
+      "prompts": {},
+      "apiTools": {},
+      "messages": {
+        "696ad44d22776736091c454a": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{saudacaoInicial}"
+                        },
+                        {
+                          "text": ","
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Eu sou o ClimaFlow, o seu assistente meteorológico. De qual cidade você gostaria de saber a previsão?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "696ad5d622776736091c4597": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Na cidade de "
+                        },
+                        {
+                          "text": "{apiNomeCidade}"
+                        },
+                        {
+                          "text": ", os termômetros marcam "
+                        },
+                        {
+                          "text": "{correcaoTemperatura}"
+                        },
+                        {
+                          "text": "º agora, "
+                        },
+                        {
+                          "text": "{comentarioCondicaoTempo}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{comentarioTemperatura}"
+                        },
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Você gostaria de verificar o tempo em outra cidade?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "696adb4e22776736091c46dc": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Ops! Não consegui localizar a cidade '"
+                        },
+                        {
+                          "text": "{nomeCidade}"
+                        },
+                        {
+                          "text": " '. 🧐 Pode conferir se o nome está correto ou tentar uma cidade vizinha mais conhecida?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "696adc5d22776736091c46f6": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Espero ter ajudado com a previsão de hoje! Se precisar consultar outra cidade, estarei por aqui. Até a próxima! 👋"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "696adcadf8cc71461b247bb4": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Desculpe, tive um pequeno problema técnico para me conectar com o satélite agora. 📡 "
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": ""
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "Que tal tentarmos novamente em alguns instantes?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "696ae0b222776736091c47cb": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Que tal tentarmos novamente em alguns instantes?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "696ae0cd22776736091c47d4": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Você gostaria de verificar o tempo em outra cidade?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "696ae6ddf8cc71461b247bba": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "De qual cidade você gostaria de saber a previsão?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "globalPrompts": null,
+      "integrationTools": {},
+      "mcpIntegrationTools": {}
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "ClimaFlow",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "platform": "webchat",
+        "slotsMap": {},
+        "extraSlots": [],
+        "cmsEntities": {},
+        "extraIntents": [],
+        "cmsVariables": {
+          "vf_year": {
+            "isSystem": true,
+            "description": "Current year in the format \"2025\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_now": {
+            "isSystem": true,
+            "description": "Current date and time in the format \"Jan 1, 2025, 16:37\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_user_timezone": {
+            "isSystem": true,
+            "description": "The user's timezone in the format \"America/Toronto\", if available. Defaults to the project timezone.",
+            "defaultValue": null
+          },
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          },
+          "vf_date": {
+            "isSystem": true,
+            "description": "Current date in the format \"Jan 1, 2025\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_time": {
+            "isSystem": true,
+            "description": "Current time in the format \"16:37\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_day": {
+            "isSystem": true,
+            "description": "Current day of month in the format \"1\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_month": {
+            "isSystem": true,
+            "description": "Current month in the format \"January\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "vf_weekday": {
+            "isSystem": true,
+            "description": "Current day of week in the format \"Monday\". You can modify the timezone in project settings.",
+            "defaultValue": null
+          },
+          "apiTemperatura": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Temperatura atual retornando pela API Open Weather.",
+            "defaultValue": null
+          },
+          "apiCondicaoTempo": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Condição do tempo atual retornado pela API Open Weather.",
+            "defaultValue": null
+          },
+          "correcaoTemperatura": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Corrige a temperatura com menos casas decimais.",
+            "defaultValue": null
+          },
+          "comentarioCondicaoTempo": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Mensagem personalizada de acordo a condição do tempo.",
+            "defaultValue": null
+          },
+          "saudacaoInicial": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Saudação inicial enviada no chat.",
+            "defaultValue": "Olá"
+          },
+          "vf_transcript_id": {
+            "isSystem": true,
+            "description": "The transcript ID of the current conversation. Only available if transcripts are enabled.",
+            "defaultValue": "0"
+          },
+          "apiNomeCidade": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Nome da cidade retornado pela API Open Weather.",
+            "defaultValue": null
+          },
+          "correcaoNomeCidade": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Nome da cidade para envio na API da Open Weather.",
+            "defaultValue": null
+          },
+          "nomeCidade": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Nome da cidade enviada pelo usuário.",
+            "defaultValue": ""
+          },
+          "comentarioTemperatura": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "Mensagem personalizada de acordo com a temperatura.",
+            "defaultValue": null
+          }
+        },
+        "usedIntentsSet": [],
+        "functionDefinitions": {},
+        "referencedAgentsIDs": [],
+        "referencedPromptIDs": [],
+        "referencedAPIToolIDs": [],
+        "referencedResponseIDs": [
+          "696ad44d22776736091c454a",
+          "696ad5d622776736091c4597",
+          "696ae0cd22776736091c47d4",
+          "696adb4e22776736091c46dc",
+          "696adc5d22776736091c46f6",
+          "696adcadf8cc71461b247bb4",
+          "696ae0b222776736091c47cb",
+          "696ae6ddf8cc71461b247bba"
+        ],
+        "referencedIntegrationToolIDs": [],
+        "referencedMCPIntegrationToolIDs": [],
+        "interfaces": [],
+        "permissions": [],
+        "usedEventsSet": [],
+        "goToIntentsSet": []
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "voice": {
+        "stt": {
+          "provider": "deepgram",
+          "model": "flux",
+          "locale": "en",
+          "punctuationWaitMS": 200,
+          "partialWaitMS": 1000,
+          "silenceWaitMS": 10,
+          "interruptionWaitWords": 1
+        },
+        "tts": {
+          "provider": "elevenlabs",
+          "voice": "ZF6FPAbjXT4488VcRRnw",
+          "model": "eleven_turbo_v2_5",
+          "settings": {}
+        },
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": true,
+        "audioSync": false
+      },
+      "widget": {
+        "type": "chat",
+        "chat": {
+          "renderMode": "embed",
+          "headerImage": {
+            "enabled": true,
+            "url": "https://cm4-production-assets.s3.amazonaws.com/1768615109590-gemini_generated_image_dq6sdydq6sdydq6s.png"
+          },
+          "agentImage": {
+            "enabled": true,
+            "url": "https://cm4-production-assets.s3.amazonaws.com/1768615128803-gemini_generated_image_dq6sdydq6sdydq6s.png"
+          },
+          "banner": {
+            "title": "ClimaFlow",
+            "description": "Assistente Meteorológico",
+            "enabled": true
+          },
+          "placeholderText": "Mensagem...",
+          "disclaimer": {
+            "enabled": false,
+            "title": "Privacy notice",
+            "description": "Before we can proceed with your conversation, we kindly ask you to review and accept our privacy policy, outlining how we handle and protect your personal information throughout our services.",
+            "primaryButtonText": "Submit",
+            "secondaryButtonText": "Privacy policy",
+            "secondaryButtonURL": ""
+          },
+          "aiDisclaimer": {
+            "text": "Generated by AI, double-check for accuracy.",
+            "enabled": false
+          },
+          "handoffToAgentImageURL": "",
+          "voiceInput": true,
+          "voiceOutput": false,
+          "voiceMode": false
+        },
+        "voice": {
+          "renderMode": "full",
+          "content": {
+            "talkingText": "Talk to interrupt",
+            "endButtonText": "End",
+            "listeningText": "Listening...",
+            "startButtonText": "Start a call",
+            "callToActionText": "How can I help you?"
+          }
+        },
+        "common": {
+          "sideSpacing": "50",
+          "bottomSpacing": "50",
+          "position": "right",
+          "fontFamily": "UCity Pro",
+          "primaryColor": {
+            "color": "#397DFF",
+            "palette": {
+              "50": "#E7F5FD",
+              "100": "#C6E4FB",
+              "200": "#A2D2FA",
+              "300": "#87BFFB",
+              "400": "#659FFD",
+              "500": "#397DFF",
+              "600": "#2F68DB",
+              "700": "#264EB4",
+              "800": "#1C368E",
+              "900": "#0F1E61"
+            }
+          },
+          "poweredBy": true,
+          "launcher": {
+            "type": "both",
+            "text": "Testar o chatbot"
+          },
+          "footerLink": {
+            "enabled": false
+          },
+          "persistence": "localStorage"
+        },
+        "security": {
+          "approvedDomains": {
+            "enabled": false,
+            "domains": ""
+          },
+          "disableTranscript": false
+        }
+      },
+      "memory": {
+        "turns": 10
+      },
+      "llmFallback": {
+        "models": {
+          "open-ai": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "anthropic": {
+            "*": {
+              "provider": "open-ai",
+              "model": "gpt-4.1-2025-04-14"
+            }
+          },
+          "groq": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          },
+          "google": {
+            "*": {
+              "provider": "anthropic",
+              "model": "claude-4-sonnet"
+            }
+          }
+        }
+      },
+      "intentClassification": {
+        "type": "rag",
+        "params": {
+          "model": "claude-3.5-haiku",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      },
+      "llm": {
+        "priorityProcessing": false
+      },
+      "globalNoMatch": {
+        "type": "static",
+        "prompt": [
+          {
+            "text": [
+              "Desculpe, não entendi. Por favor, escolha um botão antes de continuar."
+            ]
+          }
+        ]
+      },
+      "time": {
+        "timezone": "America/Sao_Paulo"
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "vf_year",
+      "vf_now",
+      "vf_user_timezone",
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "vf_date",
+      "vf_time",
+      "vf_day",
+      "vf_month",
+      "vf_weekday",
+      "apiTemperatura",
+      "apiCondicaoTempo",
+      "correcaoTemperatura",
+      "comentarioCondicaoTempo",
+      "saudacaoInicial",
+      "vf_transcript_id",
+      "apiNomeCidade",
+      "correcaoNomeCidade",
+      "nomeCidade",
+      "comentarioTemperatura"
+    ],
+    "_id": "696ad1b722776736091c4502",
+    "updatedAt": "2026-01-20T03:30:46.253Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 1921910,
+        "updatedAt": "2026-01-17T00:03:03.336Z"
+      }
+    ],
+    "projectID": "696ad1b722776736091c4501",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1701833501,
+      "creatorID": 1921910,
+      "variables": [],
+      "menuItems": [],
+      "_id": "696ad1b722776736091c4504",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "696ad1b722776736091c4502"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 52.799999999999955,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "696ae62062571769efa05ceb",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {}
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -313.2771191240965,
+            195.36757069376765
+          ]
+        },
+        "696ad44c62571769efa05b64": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "696ad44d22776736091c454a",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad47462571769efa05b6f",
+                  "id": "696ad44c62571769efa05b65",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          90.91,
+                          579.29
+                        ]
+                      },
+                      {
+                        "point": [
+                          114.91,
+                          579.29
+                        ]
+                      },
+                      {
+                        "point": [
+                          114.91,
+                          681.27
+                        ]
+                      },
+                      {
+                        "point": [
+                          9.58,
+                          681.27
+                        ]
+                      },
+                      {
+                        "point": [
+                          9.58,
+                          723.85
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ad44c62571769efa05b64"
+        },
+        "696ad44c62571769efa05b66": {
+          "type": "block",
+          "data": {
+            "name": "perguntaCidade",
+            "steps": [
+              "696ad44c62571769efa05b64"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "696ad44c62571769efa05b66",
+          "coords": [
+            -75.0914950560613,
+            461.2850348684801
+          ]
+        },
+        "696ad47462571769efa05b6d": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "696ad48b22776736091c455a"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696ee58eb5ef75722cff3c7c",
+                  "id": "696ad47462571769efa05b6e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -156.41,
+                          810.85
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -180.41,
+                          810.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          -180.41,
+                          905.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          3.07,
+                          905.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          3.07,
+                          999.22
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#5b9fd7"
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ad47462571769efa05b6d",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "696ad47462571769efa05b6f": {
+          "type": "block",
+          "data": {
+            "name": "salvaCidade",
+            "steps": [
+              "696ad47462571769efa05b6d"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "696ad47462571769efa05b6f",
+          "coords": [
+            9.585551247609432,
+            723.8476438171348
+          ]
+        },
+        "696ad4d762571769efa05b77": {
+          "type": "api-v2",
+          "data": {
+            "name": "",
+            "url": [
+              {
+                "text": [
+                  "https://api.openweathermap.org/data/2.5/weather?q=",
+                  {
+                    "variableID": "696eeb30c51f60cfb9cdd952"
+                  },
+                  "&appid=",
+                  {
+                    "secretID": "696ad57722776736091c4577"
+                  },
+                  "&units=metric&lang=pt_br"
+                ]
+              }
+            ],
+            "headers": [],
+            "httpMethod": "get",
+            "queryParameters": [],
+            "responseMappings": [
+              {
+                "id": "cmklzki5o01qx2a7p4d8294b0",
+                "path": "response.name",
+                "variableID": "696eeb3fc51f60cfb9cdd957"
+              },
+              {
+                "id": "cmkhke7zg00lb2a7w9dsfp852",
+                "path": "response.weather[0].main",
+                "variableID": "696ad6b022776736091c45ce"
+              },
+              {
+                "id": "cmkhk8opl00fg2a7wvjpycci0",
+                "path": "response.main.temp",
+                "variableID": "696ad5bf22776736091c4592"
+              }
+            ],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad84e62571769efa05c1d",
+                  "id": "696ad4d762571769efa05b78",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          628.8,
+                          90.82
+                        ]
+                      },
+                      {
+                        "point": [
+                          716.77,
+                          90.82
+                        ]
+                      },
+                      {
+                        "point": [
+                          716.77,
+                          232.76
+                        ]
+                      },
+                      {
+                        "point": [
+                          804.75,
+                          232.76
+                        ],
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#56b365"
+                  }
+                },
+                "fail": {
+                  "id": "696adb5562571769efa05c3f",
+                  "target": "696adb4d62571769efa05c38",
+                  "type": "fail",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          628.79,
+                          145.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          652.79,
+                          145.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          652.79,
+                          211.46
+                        ]
+                      },
+                      {
+                        "point": [
+                          609.2,
+                          211.46
+                        ]
+                      },
+                      {
+                        "point": [
+                          609.2,
+                          277.62
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#d58493"
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "fallback": {
+              "path": true,
+              "pathLabel": "Fail"
+            }
+          },
+          "nodeID": "696ad4d762571769efa05b77"
+        },
+        "696ad4d762571769efa05b7a": {
+          "type": "block",
+          "data": {
+            "name": "consultaCidadeAPI",
+            "steps": [
+              "696ad4d762571769efa05b77"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "696ad4d762571769efa05b7a",
+          "coords": [
+            462.78864474723014,
+            -108.43673049962456
+          ]
+        },
+        "696ad5d562571769efa05c01": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "696ad5d622776736091c4597",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696adafe62571769efa05c2f",
+                  "id": "696ad5d562571769efa05c02",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1692.66,
+                          432.1
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          1668.66,
+                          432.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1668.66,
+                          580.08
+                        ]
+                      },
+                      {
+                        "point": [
+                          1766.47,
+                          580.08
+                        ]
+                      },
+                      {
+                        "point": [
+                          1766.47,
+                          631.56
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ad5d562571769efa05c01"
+        },
+        "696ad5d562571769efa05c03": {
+          "type": "block",
+          "data": {
+            "name": "mensagemTemperatura",
+            "steps": [
+              "696ad5d562571769efa05c01"
+            ],
+            "color": ""
+          },
+          "nodeID": "696ad5d562571769efa05c03",
+          "coords": [
+            1858.6700081397514,
+            268.0915950752019
+          ]
+        },
+        "696ad63962571769efa05c0a": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ad63962571769efa05c0a"
+        },
+        "696ad84e62571769efa05c1a": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "// ajusta a temperatura para um número inteiro\ncorrecaoTemperatura = Math.round(apiTemperatura || 0);\n\n// ajusta o case sensitive da mensagem de condição da api\nconst correcaoCondicaoTempo = (apiCondicaoTempo || \"\").toLowerCase();\n\n// lógica para mensagem de condição do tempo\nswitch(correcaoCondicaoTempo) {\n    case 'rain':\n        comentarioCondicaoTempo = \"e está chovendo, melhor não esquecer o guarda-chuva! ☔\";\n        break;\n    case 'drizzle':\n        comentarioCondicaoTempo = \"e pode chover um pouco, melhor não esquecer o guarda-chuva! ☔\";\n        break;\n    case 'clear':\n        comentarioCondicaoTempo = \"e o céu está limpo e com poucas nuvens! ✨\";\n        break;\n    case 'clouds':\n        comentarioCondicaoTempo = \"e está um pouco nublado. ☁️\";\n        break;\n    case 'thunderstorm':\n        comentarioCondicaoTempo = \"e atenção para trovoadas! ⛈️\";\n        break;\n    default:\n        comentarioCondicaoTempo = \"e o tempo está excelente! ✨\";\n}\n\n// lógica para mensagem de temperatura\nif (correcaoCondicaoTempo === 'rain' || correcaoCondicaoTempo === 'thunderstorm') {\n    comentarioTemperatura = \"️\";\n} else if (correcaoTemperatura < 18) {\n    comentarioTemperatura = \"Que frio, melhor levar um casaco, não acha? 🧥\";\n} else if (correcaoTemperatura > 28) {\n    comentarioTemperatura = \"Dia quente! Não esqueça de beber água. 🥤\";\n} else {\n    comentarioTemperatura = \"O tempo está ótimo! Nem muito frio, nem muito quente. Perfeito, não acha? ✨\";\n}",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "696c435d0a931649e8642252",
+                  "id": "696ad84e62571769efa05c1b",
+                  "data": {
+                    "color": "#56b365",
+                    "points": [
+                      {
+                        "point": [
+                          1135.76,
+                          339.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          1161.67,
+                          339.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          1161.67,
+                          242.29
+                        ]
+                      },
+                      {
+                        "point": [
+                          1187.59,
+                          242.29
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "696adcac62571769efa05c67",
+                  "id": "696ad84e62571769efa05c1c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1135.74,
+                          394.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          1159.74,
+                          394.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          1159.74,
+                          468.11
+                        ]
+                      },
+                      {
+                        "point": [
+                          971.13,
+                          468.11
+                        ]
+                      },
+                      {
+                        "point": [
+                          971.13,
+                          542.2
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#d58493",
+                    "type": "STRAIGHT"
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ad84e62571769efa05c1a"
+        },
+        "696ad84e62571769efa05c1d": {
+          "type": "block",
+          "data": {
+            "name": "logicaTempEMensagens",
+            "steps": [
+              "696ad84e62571769efa05c1a"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "696ad84e62571769efa05c1d",
+          "coords": [
+            969.7512787801566,
+            205.7763123908398
+          ]
+        },
+        "696adafe62571769efa05c2e": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cmkhl2a8v019w2a7wgx0o4oun",
+                "label": [
+                  {
+                    "text": [
+                      "Sim"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmkhl9eom01qc2a7wkp5vyria",
+                "label": [
+                  {
+                    "text": [
+                      "Não"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "cmkhl2a8v019w2a7wgx0o4oun": {
+                  "id": "696adb0062571769efa05c34",
+                  "target": "696ae6dd62571769efa05cfa",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1600.48,
+                          710.81
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          1572.78,
+                          710.81
+                        ]
+                      },
+                      {
+                        "point": [
+                          1572.78,
+                          751.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          1545.08,
+                          751.61
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "cmkhl9eom01qc2a7wkp5vyria": {
+                  "id": "696adc4c62571769efa05c53",
+                  "target": "696adc5c62571769efa05c57",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1932.48,
+                          765.08
+                        ]
+                      },
+                      {
+                        "point": [
+                          1956.48,
+                          765.08
+                        ]
+                      },
+                      {
+                        "point": [
+                          1956.48,
+                          882.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          1805.45,
+                          882.04
+                        ]
+                      },
+                      {
+                        "point": [
+                          1805.45,
+                          913.42
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "noMatch": {
+              "repromptID": "696ae0cd22776736091c47d4"
+            }
+          },
+          "nodeID": "696adafe62571769efa05c2e",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "696adafe62571769efa05c2f": {
+          "type": "block",
+          "data": {
+            "name": "botoesVerificarOutra",
+            "steps": [
+              "696adafe62571769efa05c2e"
+            ],
+            "color": ""
+          },
+          "nodeID": "696adafe62571769efa05c2f",
+          "coords": [
+            1766.4668759599688,
+            631.5605811598957
+          ]
+        },
+        "696adb4d62571769efa05c36": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "696adb4e22776736091c46dc",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad47462571769efa05b6f",
+                  "id": "696adb4d62571769efa05c37",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          443.2,
+                          396.61
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          308.89,
+                          396.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          308.89,
+                          750.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          174.59,
+                          750.85
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#A1ADBA"
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696adb4d62571769efa05c36"
+        },
+        "696adb4d62571769efa05c38": {
+          "type": "block",
+          "data": {
+            "name": "erroNaoLocalizouCidade",
+            "steps": [
+              "696adb4d62571769efa05c36"
+            ],
+            "color": ""
+          },
+          "nodeID": "696adb4d62571769efa05c38",
+          "coords": [
+            609.1966826832568,
+            277.619003398408
+          ]
+        },
+        "696adc5c62571769efa05c55": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "696adc5d22776736091c46f6",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad63962571769efa05c0a",
+                  "id": "696adc5c62571769efa05c56",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1971.44,
+                          1022.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1998.12,
+                          1022.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1998.12,
+                          1204.54
+                        ]
+                      },
+                      {
+                        "point": [
+                          1974.12,
+                          1204.54
+                        ],
+                        "reversed": true,
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696adc5c62571769efa05c55"
+        },
+        "696adc5c62571769efa05c57": {
+          "type": "block",
+          "data": {
+            "name": "mensagemEncerramento",
+            "steps": [
+              "696adc5c62571769efa05c55"
+            ],
+            "color": ""
+          },
+          "nodeID": "696adc5c62571769efa05c57",
+          "coords": [
+            1805.436305611517,
+            913.4224347844312
+          ]
+        },
+        "696adcac62571769efa05c64": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "696adcadf8cc71461b247bb4",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696add1062571769efa05c6f",
+                  "id": "696adcac62571769efa05c65",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          805.12,
+                          679.2
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          772.19,
+                          679.2
+                        ]
+                      },
+                      {
+                        "point": [
+                          772.19,
+                          897.48
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#d58493"
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696adcac62571769efa05c64"
+        },
+        "696add1062571769efa05c6e": {
+          "type": "buttons-v2",
+          "data": {
+            "name": "Buttons",
+            "items": [
+              {
+                "id": "cmkhldmrg01yq2a7wt4lpc2qb",
+                "label": [
+                  {
+                    "text": [
+                      "Tentar novamente"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cmkhlduee01z02a7wzpisfcvo",
+                "label": [
+                  {
+                    "text": [
+                      "Encerrar"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "cmkhldmrg01yq2a7wt4lpc2qb": {
+                  "id": "696add1162571769efa05c74",
+                  "target": "696ad44c62571769efa05b66",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          606.18,
+                          976.73
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          348.04,
+                          976.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          348.04,
+                          488.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          89.9,
+                          488.3
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "cmkhlduee01z02a7wzpisfcvo": {
+                  "id": "696add1b62571769efa05c76",
+                  "target": "696ad63962571769efa05c0a",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          938.16,
+                          1030.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1290.13,
+                          1030.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1290.13,
+                          1204.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          1642.1,
+                          1204.53
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "noMatch": {
+              "repromptID": "696ae0b222776736091c47cb"
+            }
+          },
+          "nodeID": "696add1062571769efa05c6e",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "696add1062571769efa05c6f": {
+          "type": "block",
+          "data": {
+            "name": "botoesTentarNovamente",
+            "steps": [
+              "696add1062571769efa05c6e"
+            ],
+            "color": ""
+          },
+          "nodeID": "696add1062571769efa05c6f",
+          "coords": [
+            772.1785379749491,
+            897.4697760302481
+          ]
+        },
+        "696ae62062571769efa05ce8": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "// obtem a hora atual\nconst hora = new Date().getHours();\n\n// lógica para mensagem de saudação\nif (hora >= 5 && hora < 12) {\n    saudacaoInicial = \"Bom dia\";\n} else if (hora >= 12 && hora < 18) {\n    saudacaoInicial = \"Boa tarde\";\n} else {\n    saudacaoInicial = \"Boa noite\";\n}",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad44c62571769efa05b66",
+                  "id": "696ae62062571769efa05ce9",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -183.04,
+                          302
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -207.04,
+                          302
+                        ]
+                      },
+                      {
+                        "point": [
+                          -207.04,
+                          419.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          -75.09,
+                          419.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          -75.09,
+                          461.27
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#56b365"
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "696ad44c62571769efa05b66",
+                  "id": "696ae62062571769efa05cea",
+                  "data": {
+                    "color": "#d58493",
+                    "points": [
+                      {
+                        "point": [
+                          -183.04,
+                          356.48
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          -207.04,
+                          356.48
+                        ]
+                      },
+                      {
+                        "point": [
+                          -207.04,
+                          419.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          -75.09,
+                          419.73
+                        ]
+                      },
+                      {
+                        "point": [
+                          -75.09,
+                          461.27
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ae62062571769efa05ce8"
+        },
+        "696ae62062571769efa05ceb": {
+          "type": "block",
+          "data": {
+            "name": "logicaSaudacao",
+            "steps": [
+              "696ae62062571769efa05ce8"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "696ae62062571769efa05ceb",
+          "coords": [
+            -17.05884983002298,
+            168.24483825638782
+          ]
+        },
+        "696ae6dd62571769efa05cf7": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "696ae6ddf8cc71461b247bba",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad47462571769efa05b6f",
+                  "id": "696ae6dd62571769efa05cf8",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1214.05,
+                          812.62
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          694.32,
+                          812.62
+                        ]
+                      },
+                      {
+                        "point": [
+                          694.32,
+                          750.85
+                        ]
+                      },
+                      {
+                        "point": [
+                          174.59,
+                          750.85
+                        ],
+                        "reversed": true,
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#A1ADBA"
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ae6dd62571769efa05cf7"
+        },
+        "696ae6dd62571769efa05cfa": {
+          "type": "block",
+          "data": {
+            "name": "verificarOutraCidade",
+            "color": "",
+            "triggers": [],
+            "steps": [
+              "696ae6dd62571769efa05cf7"
+            ]
+          },
+          "nodeID": "696ae6dd62571769efa05cfa",
+          "coords": [
+            1380.0613677460547,
+            724.6213492021036
+          ]
+        },
+        "696c435d0a931649e864224f": {
+          "type": "api-v2",
+          "data": {
+            "name": "",
+            "url": [
+              {
+                "text": [
+                  "https://hook.us2.make.com/abcpto9muaoxtwynsswb67h2lfokhrxr"
+                ]
+              }
+            ],
+            "headers": [
+              {
+                "id": "cmkj3zs3000n32a7w707sl43w",
+                "key": "x-make-apikey",
+                "value": [
+                  {
+                    "text": [
+                      "",
+                      {
+                        "secretID": "696c438864c78178bab89c5f"
+                      },
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "httpMethod": "post",
+            "queryParameters": [],
+            "responseMappings": [],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad5d562571769efa05c03",
+                  "id": "696c435d0a931649e8642250",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1518.56,
+                          382.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          1606.11,
+                          382.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          1606.11,
+                          295.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1693.66,
+                          295.1
+                        ],
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#56b365"
+                  }
+                },
+                "fail": {
+                  "id": "696e55248b5964c864653a63",
+                  "target": "696adafe62571769efa05c2f",
+                  "type": "fail",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1518.56,
+                          437.02
+                        ]
+                      },
+                      {
+                        "point": [
+                          1560.01,
+                          437.02
+                        ]
+                      },
+                      {
+                        "point": [
+                          1560.01,
+                          658.56
+                        ]
+                      },
+                      {
+                        "point": [
+                          1601.46,
+                          658.56
+                        ],
+                        "allowedToTop": true
+                      }
+                    ],
+                    "color": "#d58493"
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "body": {
+              "type": "raw-input",
+              "contentType": "json",
+              "content": [
+                "{\n    \"datetime\": \"{vf_now}\",\n    \"cidade\": \"",
+                {
+                  "variableID": "696eeb3fc51f60cfb9cdd957"
+                },
+                "\",\n    \"temperatura\": \"",
+                {
+                  "variableID": "696ad89522776736091c4698"
+                },
+                "\",\n    \"clima\": \"",
+                {
+                  "variableID": "696ad6b022776736091c45ce"
+                },
+                "\",\n    \"saudacao_inicial\": \"",
+                {
+                  "variableID": "696ae64022776736091c487f"
+                },
+                "\",\n    \"comentario_clima\": \"",
+                {
+                  "variableID": "696ae2a222776736091c47fc"
+                },
+                "\",\n    \"comentario_temperatura\": \"",
+                {
+                  "variableID": "696ada3222776736091c46a0"
+                },
+                "\",\n    \"plataforma\": \"Voiceflow\",\n    \"transcript_id\": \"{vf_transcript_id}\",\n    \"user_id\": \"",
+                {
+                  "variableID": "user_id"
+                },
+                "\",\n    \"user_timezone\": \"{vf_user_timezone}\"\n}"
+              ]
+            },
+            "fallback": {
+              "path": true,
+              "pathLabel": "Fail"
+            }
+          },
+          "nodeID": "696c435d0a931649e864224f"
+        },
+        "696c435d0a931649e8642252": {
+          "type": "block",
+          "data": {
+            "name": "salvaMetricasMake",
+            "steps": [
+              "696c435d0a931649e864224f"
+            ],
+            "color": "",
+            "triggers": []
+          },
+          "nodeID": "696c435d0a931649e8642252",
+          "coords": [
+            1352.5781764171763,
+            215.27155262205594
+          ]
+        },
+        "696ee58eb5ef75722cff3c79": {
+          "type": "code",
+          "data": {
+            "name": "",
+            "code": "// remover espaços desnecessários\ncorrecaoNomeCidade = nomeCidade.trim();\n\n// deixar o nome da cidade minusculo\ncorrecaoNomeCidade = correcaoNomeCidade.toLowerCase();\n\n// lógica abreviações de cidade\nswitch(correcaoNomeCidade) {\n    case 'sp':\n        correcaoNomeCidade = \"São Paulo\";\n        break;\n    case 'rj':\n        correcaoNomeCidade = \"Rio de Janeiro\";\n        break;\n    default:\n        correcaoNomeCidade = correcaoNomeCidade\n}",
+            "paths": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "696ad4d762571769efa05b7a",
+                  "id": "696ee58eb5ef75722cff3c7a",
+                  "data": {
+                    "color": "#56b365",
+                    "points": [
+                      {
+                        "point": [
+                          169.05,
+                          1132.97
+                        ]
+                      },
+                      {
+                        "point": [
+                          233.42,
+                          1132.97
+                        ]
+                      },
+                      {
+                        "point": [
+                          233.42,
+                          -81.45
+                        ]
+                      },
+                      {
+                        "point": [
+                          297.78,
+                          -81.45
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": "696adcac62571769efa05c67",
+                  "id": "696ee58eb5ef75722cff3c7b",
+                  "data": {
+                    "color": "#d58493",
+                    "points": [
+                      {
+                        "point": [
+                          169.05,
+                          1187.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          487.6,
+                          1187.47
+                        ]
+                      },
+                      {
+                        "point": [
+                          487.6,
+                          569.2
+                        ]
+                      },
+                      {
+                        "point": [
+                          806.14,
+                          569.2
+                        ],
+                        "allowedToTop": true
+                      }
+                    ],
+                    "type": "STRAIGHT"
+                  }
+                }
+              },
+              "dynamic": []
+            }
+          },
+          "nodeID": "696ee58eb5ef75722cff3c79"
+        },
+        "696ee58eb5ef75722cff3c7c": {
+          "type": "block",
+          "data": {
+            "name": "logicaAdequacaoNomeCidade",
+            "steps": [
+              "696ee58eb5ef75722cff3c79"
+            ]
+          },
+          "nodeID": "696ee58eb5ef75722cff3c7c",
+          "coords": [
+            3.072404105911011,
+            999.2228511585869
+          ]
+        },
+        "696ad63962571769efa05c0b": {
+          "type": "block",
+          "data": {
+            "name": "endChat",
+            "steps": [
+              "696ad63962571769efa05c0a"
+            ]
+          },
+          "nodeID": "696ad63962571769efa05c0b",
+          "coords": [
+            1808.1066142971745,
+            1125.5359888700439
+          ]
+        },
+        "696adcac62571769efa05c67": {
+          "type": "block",
+          "data": {
+            "name": "erroLogicaTempEMensagens",
+            "steps": [
+              "696adcac62571769efa05c64"
+            ]
+          },
+          "nodeID": "696adcac62571769efa05c67",
+          "coords": [
+            971.1358005114589,
+            542.1927916559531
+          ]
+        }
+      },
+      "offsetX": 553.5022357022123,
+      "offsetY": 130.4591272108885,
+      "modified": 1701833501,
+      "creatorID": 1921910,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "696ad1b722776736091c4505",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "696ad1b722776736091c4502"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 1921910,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:03:03.000Z",
+      "updatedByID": 1921910
+    }
+  ],
+  "utterances": [],
+  "requiredEntities": [],
+  "folders": [
+    {
+      "id": "696ad51422776736091c4575",
+      "name": "system",
+      "scope": "variable",
+      "parentID": null,
+      "createdAt": "2026-01-17T00:17:25.000Z"
+    }
+  ],
+  "responses": [
+    {
+      "id": "696ad44d22776736091c454a",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T00:14:05.000Z",
+      "updatedAt": "2026-01-17T00:14:29.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ad5d622776736091c4597",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T00:20:38.000Z",
+      "updatedAt": "2026-01-17T00:20:47.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696adb4e22776736091c46dc",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T00:43:58.000Z",
+      "updatedAt": "2026-01-17T00:44:02.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696adc5d22776736091c46f6",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T00:48:29.000Z",
+      "updatedAt": "2026-01-17T00:48:54.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696adcadf8cc71461b247bb4",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T00:49:50.000Z",
+      "updatedAt": "2026-01-17T00:49:50.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ae0b222776736091c47cb",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T01:06:59.000Z",
+      "updatedAt": "2026-01-17T01:07:03.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ae0cd22776736091c47d4",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T01:07:25.000Z",
+      "updatedAt": "2026-01-17T01:07:27.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ae6ddf8cc71461b247bba",
+      "name": "",
+      "createdByID": 1921910,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2026-01-17T01:33:18.000Z",
+      "updatedAt": "2026-01-17T01:33:18.000Z",
+      "updatedByID": 1921910
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "696ae0b222776736091c47cd",
+      "discriminatorID": "696ae0b222776736091c47cc",
+      "text": [
+        {
+          "text": [
+            "Que tal tentarmos novamente em alguns instantes?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T01:06:59.000Z"
+    },
+    {
+      "id": "696adc5d22776736091c46f8",
+      "discriminatorID": "696adc5d22776736091c46f7",
+      "text": [
+        {
+          "text": [
+            "Espero ter ajudado com a previsão de hoje! Se precisar consultar outra cidade, estarei por aqui. Até a próxima! 👋"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T00:48:29.000Z"
+    },
+    {
+      "id": "696ae0cd22776736091c47d6",
+      "discriminatorID": "696ae0cd22776736091c47d5",
+      "text": [
+        {
+          "text": [
+            "Você gostaria de verificar o tempo em outra cidade?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T01:07:25.000Z"
+    },
+    {
+      "id": "696ad44d22776736091c454c",
+      "discriminatorID": "696ad44d22776736091c454b",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "696ae64022776736091c487f"
+            },
+            ","
+          ]
+        },
+        {
+          "text": [
+            "Eu sou o ClimaFlow, o seu assistente meteorológico. De qual cidade você gostaria de saber a previsão?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T00:14:05.000Z"
+    },
+    {
+      "id": "696ad5d622776736091c4599",
+      "discriminatorID": "696ad5d622776736091c4598",
+      "text": [
+        {
+          "text": [
+            "Na cidade de ",
+            {
+              "variableID": "696eeb3fc51f60cfb9cdd957"
+            },
+            ", os termômetros marcam ",
+            {
+              "variableID": "696ad89522776736091c4698"
+            },
+            "º agora, ",
+            {
+              "variableID": "696ae2a222776736091c47fc"
+            },
+            " "
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "",
+            {
+              "variableID": "696ada3222776736091c46a0"
+            },
+            ""
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Você gostaria de verificar o tempo em outra cidade?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T00:20:38.000Z"
+    },
+    {
+      "id": "696adcadf8cc71461b247bb6",
+      "discriminatorID": "696adcadf8cc71461b247bb5",
+      "text": [
+        {
+          "text": [
+            "Desculpe, tive um pequeno problema técnico para me conectar com o satélite agora. 📡 "
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "Que tal tentarmos novamente em alguns instantes?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T00:49:50.000Z"
+    },
+    {
+      "id": "696ae6ddf8cc71461b247bbc",
+      "discriminatorID": "696ae6ddf8cc71461b247bbb",
+      "text": [
+        {
+          "text": [
+            "De qual cidade você gostaria de saber a previsão?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T01:33:18.000Z"
+    },
+    {
+      "id": "696adb4e22776736091c46de",
+      "discriminatorID": "696adb4e22776736091c46dd",
+      "text": [
+        {
+          "text": [
+            "Ops! Não consegui localizar a cidade '",
+            {
+              "variableID": "696ad48b22776736091c455a"
+            },
+            " '. 🧐 Pode conferir se o nome está correto ou tentar uma cidade vizinha mais conhecida?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2026-01-17T00:43:58.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "696ae6ddf8cc71461b247bbb",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696ae6ddf8cc71461b247bba",
+      "variantOrder": [
+        "696ae6ddf8cc71461b247bbc"
+      ],
+      "createdAt": "2026-01-17T01:33:18.000Z"
+    },
+    {
+      "id": "696ad44d22776736091c454b",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696ad44d22776736091c454a",
+      "variantOrder": [
+        "696ad44d22776736091c454c"
+      ],
+      "createdAt": "2026-01-17T00:14:05.000Z"
+    },
+    {
+      "id": "696ad5d622776736091c4598",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696ad5d622776736091c4597",
+      "variantOrder": [
+        "696ad5d622776736091c4599"
+      ],
+      "createdAt": "2026-01-17T00:20:38.000Z"
+    },
+    {
+      "id": "696adb4e22776736091c46dd",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696adb4e22776736091c46dc",
+      "variantOrder": [
+        "696adb4e22776736091c46de"
+      ],
+      "createdAt": "2026-01-17T00:43:58.000Z"
+    },
+    {
+      "id": "696adc5d22776736091c46f7",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696adc5d22776736091c46f6",
+      "variantOrder": [
+        "696adc5d22776736091c46f8"
+      ],
+      "createdAt": "2026-01-17T00:48:29.000Z"
+    },
+    {
+      "id": "696adcadf8cc71461b247bb5",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696adcadf8cc71461b247bb4",
+      "variantOrder": [
+        "696adcadf8cc71461b247bb6"
+      ],
+      "createdAt": "2026-01-17T00:49:50.000Z"
+    },
+    {
+      "id": "696ae0b222776736091c47cc",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696ae0b222776736091c47cb",
+      "variantOrder": [
+        "696ae0b222776736091c47cd"
+      ],
+      "createdAt": "2026-01-17T01:06:59.000Z"
+    },
+    {
+      "id": "696ae0cd22776736091c47d5",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "696ae0cd22776736091c47d4",
+      "variantOrder": [
+        "696ae0cd22776736091c47d6"
+      ],
+      "createdAt": "2026-01-17T01:07:25.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "vf_year",
+      "name": "vf_year",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "Current year in the format \"2025\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_now",
+      "name": "vf_now",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "date",
+      "description": "Current date and time in the format \"Jan 1, 2025, 16:37\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_user_timezone",
+      "name": "vf_user_timezone",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's timezone in the format \"America/Toronto\", if available. Defaults to the project timezone.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_date",
+      "name": "vf_date",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "date",
+      "description": "Current date in the format \"Jan 1, 2025\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_time",
+      "name": "vf_time",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Current time in the format \"16:37\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_day",
+      "name": "vf_day",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "Current day of month in the format \"1\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_month",
+      "name": "vf_month",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Current month in the format \"January\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_weekday",
+      "name": "vf_weekday",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Current day of week in the format \"Monday\". You can modify the timezone in project settings.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-17T00:17:37.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ad5bf22776736091c4592",
+      "name": "apiTemperatura",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#aa8fce",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Temperatura atual retornando pela API Open Weather.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:20:16.000Z",
+      "updatedAt": "2026-01-20T02:48:53.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ad6b022776736091c45ce",
+      "name": "apiCondicaoTempo",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#aa8fce",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Condição do tempo atual retornado pela API Open Weather.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:24:17.000Z",
+      "updatedAt": "2026-01-20T02:49:10.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ad89522776736091c4698",
+      "name": "correcaoTemperatura",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Corrige a temperatura com menos casas decimais.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:32:22.000Z",
+      "updatedAt": "2026-01-20T02:54:25.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ae2a222776736091c47fc",
+      "name": "comentarioCondicaoTempo",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#56B365",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Mensagem personalizada de acordo a condição do tempo.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T01:15:14.000Z",
+      "updatedAt": "2026-01-20T02:51:14.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ae64022776736091c487f",
+      "name": "saudacaoInicial",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#56B365",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Saudação inicial enviada no chat.",
+      "defaultValue": "Olá",
+      "createdAt": "2026-01-17T01:30:40.000Z",
+      "updatedAt": "2026-01-20T03:28:21.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "vf_transcript_id",
+      "name": "vf_transcript_id",
+      "createdByID": 1921910,
+      "folderID": "696ad51422776736091c4575",
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The transcript ID of the current conversation. Only available if transcripts are enabled.",
+      "defaultValue": "0",
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-19T15:26:22.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696eeb3fc51f60cfb9cdd957",
+      "name": "apiNomeCidade",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#aa8fce",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Nome da cidade retornado pela API Open Weather.",
+      "defaultValue": null,
+      "createdAt": "2026-01-20T02:41:03.000Z",
+      "updatedAt": "2026-01-20T02:48:23.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696eeb30c51f60cfb9cdd952",
+      "name": "correcaoNomeCidade",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Nome da cidade para envio na API da Open Weather.",
+      "defaultValue": null,
+      "createdAt": "2026-01-20T02:40:48.000Z",
+      "updatedAt": "2026-01-20T02:51:38.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ad48b22776736091c455a",
+      "name": "nomeCidade",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#5B9FD7",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Nome da cidade enviada pelo usuário.",
+      "defaultValue": "",
+      "createdAt": "2026-01-17T00:15:08.000Z",
+      "updatedAt": "2026-01-20T02:50:06.000Z",
+      "updatedByID": 1921910
+    },
+    {
+      "id": "696ada3222776736091c46a0",
+      "name": "comentarioTemperatura",
+      "createdByID": 1921910,
+      "folderID": null,
+      "color": "#56B365",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "Mensagem personalizada de acordo com a temperatura.",
+      "defaultValue": null,
+      "createdAt": "2026-01-17T00:39:15.000Z",
+      "updatedAt": "2026-01-20T02:51:06.000Z",
+      "updatedByID": 1921910
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Start workflow",
+      "createdByID": 1921910,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": "",
+      "createdAt": "2026-01-17T00:03:03.000Z",
+      "updatedAt": "2026-01-20T03:31:18.000Z",
+      "updatedByID": 1921910
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "agents": [],
+  "agentAPITools": [],
+  "agentFlowTools": [],
+  "agentPathTools": [],
+  "agentFunctionTools": [],
+  "agentIntegrationTools": [],
+  "agentPathToolVariables": [],
+  "agentFlowToolVariables": [],
+  "agentMcpIntegrationTools": [],
+  "apiTools": [],
+  "apiToolInputVariables": [],
+  "integrationTools": [],
+  "functions": [],
+  "functionPaths": [],
+  "functionVariables": [],
+  "mcpServers": [],
+  "mcpServerTools": [],
+  "mcpIntegrationTools": [],
+  "project": {
+    "type": "chat",
+    "name": "ClimaFlow",
+    "image": "",
+    "teamID": "Zwnbb6ZPn2",
+    "members": [],
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 1921910,
+    "updatedBy": 1921910,
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [
+      {
+        "name": "",
+        "palette": {
+          "50": "#f7ebed",
+          "100": "#f1dee1",
+          "200": "#ebcdd2",
+          "300": "#e5bcc3",
+          "400": "#dca1ab",
+          "500": "#d58493",
+          "600": "#ce6178",
+          "700": "#a64a5e",
+          "800": "#7a3544",
+          "900": "#4e1f29"
+        },
+        "standardColor": "#d58493"
+      },
+      {
+        "name": "",
+        "palette": {
+          "50": "#f0ecf6",
+          "100": "#e6e0f1",
+          "200": "#dad0ea",
+          "300": "#cec1e3",
+          "400": "#bca8d9",
+          "500": "#aa8fce",
+          "600": "#9774c1",
+          "700": "#7e55ab",
+          "800": "#5c3d7e",
+          "900": "#392450"
+        },
+        "standardColor": "#aa8fce"
+      }
+    ],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "privacy": "private",
+    "apiPrivacy": "public",
+    "_id": "696ad1b722776736091c4501",
+    "updatedAt": "2026-01-20T03:25:22.619Z",
+    "devVersion": "696ad1b722776736091c4502",
+    "liveVersion": "696ad1b722776736091c4503"
+  },
+  "_version": "1.2",
+  "secrets": [
+    {
+      "assistantID": "696ad1b722776736091c4501",
+      "id": "696ad57722776736091c4577",
+      "updatedByID": null,
+      "name": "api_key_openweathermap",
+      "visibility": "masked",
+      "updatedAt": "2026-01-17T00:19:03.000Z",
+      "createdAt": "2026-01-17T00:19:03.000Z"
+    },
+    {
+      "assistantID": "696ad1b722776736091c4501",
+      "id": "696c438864c78178bab89c5f",
+      "updatedByID": null,
+      "name": "webhook_make_key",
+      "visibility": "masked",
+      "updatedAt": "2026-01-18T02:20:57.000Z",
+      "createdAt": "2026-01-18T02:20:57.000Z"
+    }
+  ],
+  "variableStates": [],
+  "transcriptEvaluations": [
+    {
+      "name": "Deflection rate",
+      "default": true,
+      "description": null,
+      "type": "boolean",
+      "enabled": false,
+      "prompt": "Determine if the user requested to talk to a human in order to achieve their desired outcome.",
+      "settings": null,
+      "systemTag": null,
+      "truePrompt": "The user did not require the need to talk to a human.",
+      "falsePrompt": "The user required the need to talk to a human agent."
+    },
+    {
+      "name": "Satisfaction score",
+      "default": true,
+      "description": null,
+      "type": "number",
+      "enabled": false,
+      "prompt": "Rate the user's overall satisfaction based on the conversation, using a scale from 1 to 5.",
+      "settings": null,
+      "systemTag": null,
+      "minimumValue": 1,
+      "minimumPrompt": "Look for negative comments or expressions of dissatisfaction to rate the minimum satisfaction.",
+      "maximumValue": 5,
+      "maximumPrompt": "Identify any comments or phrases in the transcript that express the highest level of satisfaction."
+    },
+    {
+      "name": "AI summary",
+      "default": true,
+      "description": null,
+      "type": "string",
+      "enabled": false,
+      "prompt": "Look at the transcript and provide a brief summary of the conversation. Make sure to highlight the outcome of the conversation, and key moments or topics, and the overall tone of the customer.",
+      "settings": null,
+      "systemTag": null
+    }
+  ]
+}
