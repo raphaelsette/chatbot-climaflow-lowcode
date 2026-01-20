@@ -65,12 +65,13 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 
 
 **Interface do Chat**<br>
-<img src="./src/img/screenshots/print_2_3.png" width="800px">
+<img src="./src/img/screenshots/print_2_10.png" width="800px">
 
 
 **Fluxo de Design no Voiceflow**<br>
-<img src="./src/img/screenshots/print_2_6.png" width="800px">
+<img src="./src/img/screenshots/print_2_7.png" width="800px">
 
 
 **Métricas para Análise**<br>
-<img src="./src/img/screenshots/print_2_5.png" width="800px">
+<img src="./src/img/screenshots/print_2_8.png" width="800px">
+<img src="./src/img/screenshots/print_2_9.png" width="800px">
