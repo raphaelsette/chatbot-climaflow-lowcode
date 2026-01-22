@@ -10,28 +10,15 @@
     </head>
     <body>
         <main>
-            <script type="text/javascript">
-            (function(d, t) {
-                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-                v.onload = function() {
-                    window.voiceflow.chat.load({
-                    verify: { projectID: '696ad1b722776736091c4501' },
-                    url: 'https://general-runtime.voiceflow.com',
-                    versionID: 'production',
-                    voice: {
-                        url: "https://runtime-api.voiceflow.com"
-                    },
-                    render: {
-                        mode: 'embedded',
-                        target: document.getElementById('vflow-chat-container')
-                    }
-                    });
-                }
-                v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-            })(document, 'script');
-            </script>
+            <script type="module">
+  import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js';
+
+  Typebot.initStandard({ typebot: "climaflow" });
+</script>
+
+<typebot-standard style="width: 100%; height: 600px; "></typebot-standard>
+
             <br>
-            <div id="vflow-chat-container"></div>
         </main>
     </body>
     <footer>

@@ -1,9 +1,5 @@
-#vflow-chat-container {
-    margin: 0 auto;
-    width: 95%;
-    max-width: 800px;
-    height: 600px;
-    margin-bottom: 20px;
+body {
+    background-color: #f8f8f8;
 }
 
 footer {
