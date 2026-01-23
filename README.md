@@ -2,7 +2,7 @@
 
 # 🌦️ ClimaFlow: Assistente Meteorológico
 
-O ClimaFlow é um chatbot de conversação desenvolvido no [Voiceflow](https://www.voiceflow.com/) que fornece previsões do tempo em tempo real. Este projeto foi criado para demonstrar a integração de APIs externas, manipulação de dados via JavaScript e design de experiência do usuário (UX) em ferramentas low-code.
+O ClimaFlow é um chatbot de conversação desenvolvido no [TybeBot](https://typebot.io/) que fornece previsões do tempo em tempo real. Este projeto foi criado para demonstrar a integração de APIs externas, manipulação de dados via JavaScript e design de experiência do usuário (UX) em ferramentas low-code.
 
 Além disso, o assistente possui uma camada de persistência de dados através da integração com o Make e Google Sheets. Ao final de cada consulta bem-sucedida, o chatbot dispara um gatilho via Webhook que envia os dados meteorológicos processados. Esta automação permite o registo centralizado de métricas, facilitando a monitorização de utilização e a análise de performance do bot em tempo real.
 
@@ -27,7 +27,7 @@ Além disso, o assistente possui uma camada de persistência de dados através d
 
 # 🛠️ Tecnologias e Ferramentas
 
-- **Voiceflow:** Plataforma principal para design do fluxo e lógica conversacional.
+- **Tybebot:** Plataforma principal para design do fluxo e lógica conversacional.
 
 - **JavaScript:** Utilizado para manipulação de variáveis, tratamento de JSON e lógica condicional.
 
@@ -65,11 +65,11 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 
 
 **Interface do Chat**<br>
-<img src="./src/img/screenshots/print_2_10.png" width="800px">
+<img src="./src/img/screenshots/print_3_2.png" width="800px">
 
 
-**Fluxo de Design no Voiceflow**<br>
-<img src="./src/img/screenshots/print_2_7.png" width="800px">
+**Fluxo de Design no TypeBot**<br>
+<img src="./src/img/screenshots/print_3_1.png" width="800px">
 
 
 **Métricas para Análise**<br>
