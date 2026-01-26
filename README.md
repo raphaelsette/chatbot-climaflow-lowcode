@@ -2,9 +2,9 @@
 
 # 🌦️ ClimaFlow: Assistente Meteorológico
 
-O ClimaFlow é um chatbot de conversação desenvolvido no [TypeBot](https://typebot.io/) que fornece previsões do tempo em tempo real. Este projeto foi criado para demonstrar a integração de APIs externas, manipulação de dados via JavaScript e design de experiência do usuário (UX) em ferramentas low-code.
+O ClimaFlow é um chatbot de conversação que fornece previsões do tempo em tempo real. Este projeto demonstra a convergência entre ferramentas low-code, desenvolvimento Full Stack e infraestrutura, abrangendo desde a lógica de conversação até uma arquitetura de deploy self-hosted.
 
-Além disso, o assistente possui uma camada de persistência de dados através da integração com o Make e Google Sheets. Ao final de cada consulta bem-sucedida, o chatbot dispara um gatilho via Webhook que envia os dados meteorológicos processados. Esta automação permite o registo centralizado de métricas, facilitando a monitorização de utilização e a análise de performance do bot em tempo real.
+Além de fornecer dados meteorológicos, o assistente possui uma camada de persistência de dados através da integração com Make e Google Sheets. Ao final de cada consulta, um gatilho via Webhook envia os dados processados para registro de métricas e análise de performance em tempo real.
 
 ## 🚀 Funcionalidades
 
@@ -14,32 +14,46 @@ Além disso, o assistente possui uma camada de persistência de dados através d
 
 - **Lógica de Negócio Personalizada:**
 
-  - Arredondamento de temperaturas (ex: 21.6°C para 22°C).
-
   - Conselhos contextuais baseados no clima (Dicas sobre casacos, hidratação ou uso de guarda-chuva).
 
   - Mensagens adaptáveis para condições climáticas e períodos do dia.
 
-- **Registo de Métricas:** Integração com o Make (Integromat) e Google Sheets para salvar dados de cada consulta (cidade, temperatura, clima e timestamp) para análise de comportamento de mensagens e cidades mais pesquisadas.
+- **Registo de Métricas:** Integração com o Make (Integromat) e Google Sheets para salvar dados de cada consulta para análise de comportamento de mensagens e cidades mais pesquisadas.
 
 - **Tratamento de Erros (Error Handling):** Fluxos de contingência para cidades não encontradas ou falhas de conexão com a API.
 
 
 # 🛠️ Tecnologias e Ferramentas
 
-- **Typebot:** Plataforma principal para design do fluxo e lógica conversacional.
+- **Desenvolvimento e Lógica**
 
-- **JavaScript:** Utilizado para manipulação de variáveis, tratamento de JSON e lógica condicional.
+  - Typebot: Plataforma principal para design do fluxo e lógica conversacional.
 
-- **OpenWeather API:** Fonte de dados meteorológicos globais.
+  - JavaScript: Utilizado para manipulação de variáveis, tratamento de JSON e lógica condicional.
+    
+  - OpenWeather API: Fonte de dados meteorológicos globais.
+    
+  - Make: Automação para exportação de métricas.
+  
+  - Google Sheets: Para persistência de dados.
 
-- **JSON:** Formato de troca de dados entre a API e o chatbot.
 
-- **Make:** Automação para exportação de métricas.
+- **Arquitetura Cloud & Containerização**
 
-- **Google Sheets:** Para persistência de dados.
+  - Self-Hosted Cloud: Deploy realizado em instância Cloud própria.
 
-- **HTML5/CSS3:** Interface web customizada com botões flutuantes para reporte de bugs.
+  - Docker & Portainer: Utilizados para orquestração e gerenciamento ágil de containers.
+
+  
+- **Networking & Segurança**
+
+  - Cloudflare: Camada de proteção e gerenciamento de DNS para o domínio personalizado.
+
+  - Nginx Proxy Manager: Configuração de Proxy Reverso para gerenciamento de tráfego
+
+- **Observabilidade**
+
+  - Uptime Kuma: Monitoramento 24/7 da saúde dos serviços e notificações de status.
 
 
 ## 📐 Estrutura do Projeto (Arquitetura)
@@ -56,6 +70,7 @@ O bot segue uma estrutura lógica dividida em 5 fases principais:
 
 - **Registo & Encerramento:** Envia métricas para o Make e Google Sheets e oferece opções de nova consulta ou saída.
 
+
 ## 💻 Como Visualizar
 
 O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://raphaelsette.github.io/chatbot-climaflow-lowcode/
@@ -65,13 +80,20 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 
 
 **Interface do Chat**<br>
-<img src="./src/img/screenshots/print_3_2.png" width="800px">
+<img src="./src/img/screenshots/chat.png" width="800px">
 
 
 **Fluxo de Design no TypeBot**<br>
-<img src="./src/img/screenshots/print_3_1.png" width="800px">
+<img src="./src/img/screenshots/typebot.png" width="800px">
 
 
 **Métricas para Análise**<br>
-<img src="./src/img/screenshots/print_2_8.png" width="800px">
-<img src="./src/img/screenshots/print_2_9.png" width="800px">
+<img src="./src/img/screenshots/metricas.png" width="800px">
+
+
+**Portainer**<br>
+<img src="./src/img/screenshots/portainer.png" width="800px">
+
+
+**Uptime Kuma**<br>
+<img src="./src/img/screenshots/uptimekuma.png" width="800px">
