@@ -80,20 +80,20 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 
 
 **Interface do Chat**<br>
-<img src="./src/img/screenshots/chat.png" width="800px">
+<img src="./src/img/chat.png" width="800px">
 
 
 **Fluxo de Design no TypeBot**<br>
-<img src="./src/img/screenshots/typebot.png" width="800px">
+<img src="./src/img/typebot.png" width="800px">
 
 
 **Métricas para Análise**<br>
-<img src="./src/img/screenshots/metricas.png" width="800px">
+<img src="./src/img/metricas.png" width="800px">
 
 
 **Portainer**<br>
-<img src="./src/img/screenshots/portainer.png" width="800px">
+<img src="./src/img/portainer.png" width="800px">
 
 
 **Uptime Kuma**<br>
-<img src="./src/img/screenshots/uptimekuma.png" width="800px">
+<img src="./src/img/uptimekuma.png" width="800px">
