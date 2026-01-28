@@ -2,7 +2,7 @@
 
 # 🌦️ ClimaFlow: Assistente Meteorológico
 
-O ClimaFlow é um chatbot de conversação que fornece previsões do tempo em tempo real. Este projeto demonstra a convergência entre ferramentas low-code, desenvolvimento Full Stack e infraestrutura, abrangendo desde a lógica de conversação até uma arquitetura de deploy self-hosted.
+O ClimaFlow é um chatbot de conversação que fornece previsões do tempo em tempo real. Este projeto demonstra a convergência entre ferramentas low-code, desenvolvimento back-end e infraestrutura, abrangendo desde a lógica de conversação até uma arquitetura de deploy self-hosted.
 
 Além de fornecer dados meteorológicos, o assistente possui uma camada de persistência de dados através da integração com Make e Google Sheets. Ao final de cada consulta, um gatilho via Webhook envia os dados processados para registro de métricas e análise de performance em tempo real.
 
@@ -40,7 +40,7 @@ Além de fornecer dados meteorológicos, o assistente possui uma camada de persi
 
 - **Arquitetura Cloud & Containerização**
 
-  - Self-Hosted Cloud: Deploy realizado em instância Cloud própria.
+  - Self-Hosted Cloud: Deploy realizado em instância Cloud.
 
   - Docker & Portainer: Utilizados para orquestração e gerenciamento ágil de containers.
 
@@ -49,7 +49,7 @@ Além de fornecer dados meteorológicos, o assistente possui uma camada de persi
 
   - Cloudflare: Camada de proteção e gerenciamento de DNS para o domínio personalizado.
 
-  - Nginx Proxy Manager: Configuração de Proxy Reverso para gerenciamento de tráfego
+  - Nginx Proxy Manager: Configuração de Proxy Reverso para gerenciamento de tráfego.
 
 - **Observabilidade**
 
