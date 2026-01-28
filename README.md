@@ -79,15 +79,15 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 ## 📸 Demonstração do Fluxo
 
 
-**Interface do Chat**<br>
+**Chat**<br>
 <img src="./src/img/chat.png" width="800px">
 
 
-**Fluxo de Design no TypeBot**<br>
+**Fluxo**<br>
 <img src="./src/img/typebot.png" width="800px">
 
 
-**Métricas para Análise**<br>
+**Métricas**<br>
 <img src="./src/img/metricas.png" width="800px">
 
 
@@ -95,5 +95,5 @@ O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://r
 <img src="./src/img/portainer.png" width="800px">
 
 
-**Uptime Kuma**<br>
+**Status Page**<br>
 <img src="./src/img/uptimekuma.png" width="800px">
