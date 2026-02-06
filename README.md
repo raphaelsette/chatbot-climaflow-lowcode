@@ -73,7 +73,7 @@ O bot segue uma estrutura lógica dividida em 5 fases principais:
 
 ## 💻 Como Visualizar
 
-O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://raphaelsette.github.io/chatbot-climaflow-lowcode/
+O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://climaflow.settebyte.com/
 
 
 ## 📸 Demonstração do Fluxo
